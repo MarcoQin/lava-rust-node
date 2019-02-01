@@ -1,0 +1,16 @@
+[package]
+name = "lava-rust-node"
+version = "0.1.0"
+authors = ["qinyuanyuan.fy <qinyuanyuan.fy@bytedance.com>"]
+build = "build.rs"
+
+[lib]
+name = "lava_rust_node"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2"
+
+[dependencies]
+lava_rs = {git = "https://github.com/MarcoQin/lava-rs.git"}
+neon = "0.2"

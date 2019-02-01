@@ -1,0 +1,16 @@
+{
+  "name": "lava-rust-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "neon build --release",
+    "build": "neon build --release"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "neon-cli": "^0.2.0"
+  }
+}
