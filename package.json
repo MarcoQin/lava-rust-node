@@ -1,15 +1,32 @@
 {
   "name": "lava-rust-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "music player core",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "neon build --release",
-    "build": "neon build --release"
+    "install": "node-gyp rebuild",
+    "install": "neon build --release && tsc",
+    "build": "neon build --release && tsc"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoQin/lava-rust-node.git"
+  },
+  "keywords": [
+    "ffmpeg",
+    "nodejs",
+    "rust",
+    "typescript"
+  ],
+  "author": "Marco Qin",
+  "license": "MIT",
+  "gypfile": false,
+  "bugs": {
+    "url": "https://github.com/MarcoQin/lava-rust-node/issues"
+  },
+  "homepage": "https://github.com/MarcoQin/lava-rust-node#readme",
   "dependencies": {
     "neon-cli": "^0.2.0"
   }
